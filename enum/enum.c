@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 // lista de constantes (internamente enteros)
-enum estado_servidor
+typedef enum 
 {
-    APAGADO, // 0
-    ENCENDIDO, // 1
-    ERROR // 2
-};
+    APAGADO,
+    ENCENDIDO,
+    ERROR
+} MiEnum;
 
 int main(void)
 {
-    enum estado_servidor mi_servidor = APAGADO;
+    MiEnum mi_servidor = APAGADO;
 
     switch (mi_servidor)
     {
