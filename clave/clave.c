@@ -8,14 +8,14 @@ int main(void)
 
     printf("INTENTOS RESTANTES: %d\n", intentos);
 
-    while (intentos >= 0)
+    while (intentos != 0)
     {
         printf("Ingrese la clave: ");
         scanf("%d", &clave_ingresada);
      
         if(clave_ingresada == clave)
         {
-            printf("Accediendo al sistema...");
+            printf("Clave correcta, accediendo al sistema...");
             break;
         }
         else
@@ -26,5 +26,9 @@ int main(void)
         }
     }
 
+    if(intentos == 0)
+    {  
+        printf("SE TE ACABARON LOS INTENTOS...");
+    }
     return 0;
 }
