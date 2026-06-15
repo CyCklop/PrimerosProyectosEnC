@@ -37,6 +37,7 @@ int main(void)
             printf("Asigne un precio al producto: ");
             scanf("%f", &inventario[contador].precio);
 
+            contador ++;
             break;
         }
         case 2:
@@ -70,7 +71,6 @@ int main(void)
             break;
         }
     } while (opcion != 4);
-
 
     return 0;
 }
