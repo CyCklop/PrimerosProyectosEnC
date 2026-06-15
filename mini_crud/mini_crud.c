@@ -16,7 +16,7 @@ int main(void)
 
     do
     {
-        printf("INVENTARIO DE PRODUCTOS\n1.- Agregar Producto\n2.- Ver Inventario\n3.- Eliminar Producto\n4.- Salir\n");
+        printf("\nINVENTARIO DE PRODUCTOS\n1.- Agregar Producto\n2.- Ver Inventario\n3.- Eliminar Producto\n4.- Salir\n");
         scanf("%d", &opcion);
         switch (opcion)
         {
@@ -50,10 +50,10 @@ int main(void)
 
             for (int i = 0; i < contador; i++)
             {
-                printf("///*LISTA DE PRODUCTOS*///");
-                printf("///*ID: %d\n", &inventario[i].id);
-                printf("///*Nombre Producto: %s\n", &inventario[i].nombre_producto);
-                printf("///*Precio: %f\n", &inventario[i].precio);
+                printf("\n///*LISTA DE PRODUCTOS*///\n");
+                printf("///*ID: %d\n", inventario[i].id);
+                printf("///*Nombre Producto: %s\n", inventario[i].nombre_producto);
+                printf("///*Precio: %f\n", inventario[i].precio);
                 printf("///*******************///");
             }
             break;
