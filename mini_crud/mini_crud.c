@@ -16,7 +16,7 @@ int main(void)
 
     do
     {
-        printf("INVENTARIO DE PRODUCTOS\n1.- Agregar Producto\n2.- Ver Inventario\n3.- Eliminar Producto\n4.- Salir");
+        printf("INVENTARIO DE PRODUCTOS\n1.- Agregar Producto\n2.- Ver Inventario\n3.- Eliminar Producto\n4.- Salir\n");
         scanf("%d", &opcion);
         switch (opcion)
         {
