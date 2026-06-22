@@ -13,7 +13,7 @@ typedef struct Persona
 // Implementacion del "Metodo"
 void saludar_persona(Persona* self)
 {
-    printf("Hola, soy %s y tengo %d anios.\n", self->nombre, self->edad)
+    printf("Hola, soy %s y tengo %d anios.\n", self->nombre, self->edad);
 }
 
 // Funcion constructora para instanciar el "objeto"
