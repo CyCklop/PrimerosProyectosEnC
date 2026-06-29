@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+// "clase"
+.
 #define MAX 5 // numero maximo de pokemons a crear
-
+// "clase"
 typedef struct Pokemon
 {
     char nombre[50];
@@ -18,7 +19,7 @@ void chequear_pokemon(Pokemon* self)
     printf("Nombre pok: %s\nTipo pok: %s\n", self->nombre, self->tipo);
     printf("Nivel pok: %d\nDanio pok: %f\n", self->nivel, self->danio);
 }
-
+// "Constructor"
 Pokemon* crear_pokemon(char* nombre, char* tipo, int nivel, float danio)
 {
     Pokemon* nuevo_pokemon = (Pokemon*)malloc(sizeof(Pokemon));
@@ -38,7 +39,7 @@ int main(void)
     printf("/// INGRESAR POKEMON ///\n1.- Ingresar Pokemon\n2.-\n");
     printf("3.-\n4.-\nIngresar opcion: ");
 
-    scanf("%d", opcion);
+    scanf("%d", &opcion);
 
     do
     {
@@ -58,7 +59,8 @@ int main(void)
                 printf("Asigne el tipo al pokemon: \n")
                 scanf("%s", &pok[contador].tipo);
 
-                printf("")
+                printf("Asigne el nivel al pokemon\n");
+                scanf("%d", &pok[contador].nivel);
                 break;
             }
             case 2:
